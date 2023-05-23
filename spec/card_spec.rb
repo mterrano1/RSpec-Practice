@@ -1,11 +1,11 @@
-# class Card
-#   attr_accessor :rank, :suit
+class Card
+  attr_accessor :rank, :suit
 
-#   def initialize(rank, suit)
-#     @rank = rank
-#     @suit = suit
-#   end
-# end
+  def initialize(rank, suit)
+    @rank = rank
+    @suit = suit
+  end
+end
 
 RSpec.describe Card do
   let(:card) { Card.new('Ace', 'Spades') }
